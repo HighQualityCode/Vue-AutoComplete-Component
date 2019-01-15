@@ -66,7 +66,7 @@ export default {
 
     filterResults() {
       this.results = this.items.filter(
-        item => item.toLowerCase().indexOf(this.search.toLowerCase()) > -1,
+        item => item.toLowerCase().startsWith(this.search.toLowerCase()) === true,
       );
     },
 
